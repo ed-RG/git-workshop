@@ -11,4 +11,9 @@ class Program
     {
         return a - b;
     }
+
+    static int AddMaxAndMinOfTwoEnumerables(IEnumerable<int> maxEnumerable, IEnumerable<int> minEnumerable)
+    {
+        return maxEnumerable.Min() + minEnumerable.Min();
+    }
 }
