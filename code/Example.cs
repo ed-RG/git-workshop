@@ -1,5 +1,6 @@
 using System;
 
+// A simple C# program for practicing git
 class Program
 {
     static void Main()
