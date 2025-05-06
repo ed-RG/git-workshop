@@ -6,4 +6,9 @@ class Program
     {
         Console.WriteLine("Hello, world!");
     }
+
+    static int AddNumbers(int a, int b)
+    {
+        return a - b;
+    }
 }
