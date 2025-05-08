@@ -3,7 +3,14 @@ const getNthFibonacciNumber = (n: number): number => {
     return 1;
   }
 
-  return getNthFibonacciNumber(n - 1) + getNthFibonacciNumber(n - 2);
+  let prev = 1, curr = 2;
+  for (let i = 3; i <= n; i++) {
+    const next = prev + curr;
+    prev = curr;
+    curr = next;
+  }
+
+  return curr;
 }
 
 const printNthFibonacciNumber = (n: number): void => {
