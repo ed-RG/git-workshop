@@ -6,4 +6,8 @@ const getNthFibonacciNumber = (n: number): number => {
   return getNthFibonacciNumber(n - 1) + getNthFibonacciNumber(n - 2);
 }
 
-export { getNthFibonacciNumber };
+const printNthFibonacciNumber = (n: number): void => {
+  console.log(`The ${n}th Fibonacci number is: ${getNthFibonacciNumber(n)}`);
+}
+
+export { getNthFibonacciNumber, printNthFibonacciNumber };
